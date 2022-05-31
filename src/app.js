@@ -1,8 +1,11 @@
 const express = require("express")
+const path = require('path');
+const publicPath = path.resolve(__dirname,'../public');
 const app = express()
+const index_routes = require("./routers/index.routes")
 
-app.get('/', (req, res)=>{
-    res.send('ahi no eso si jamas')
-})
+app.use(express.static(publicPath));
+
+app.use('/', index_routes);
 
 module.exports = app
