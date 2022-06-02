@@ -6,7 +6,8 @@ const routeDesing = require("./routers/index.routes")
 
 // Route for / empty
 app.use('/', index_routes);
-app.use('/desing', routeDesing);
+
+app.use('/', routeDesing);
 
 
 // export app 
