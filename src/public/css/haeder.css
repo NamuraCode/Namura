@@ -1,3 +1,20 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-redirects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
 .header-namura{
     background: rgb(0, 0, 0) ;
 }
