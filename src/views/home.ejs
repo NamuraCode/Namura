@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namura</title>
-</head>
+<%- include('partials/head.ejs') %>
 <body>
     <%- include('partials/header.ejs') %>
-    <main>
-        <h1>Hi, I David Naranjo</h1>
+    <main class="home-main">
+        <section class="home-title">
+            <h1>Full Stack Developer</h1>
+        </section>
+        <section class="home-dev">
+
+        </section>
+        <section class="home-description">
+            <p>
+                Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en
+                lenguajes como, JavaScript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github. Creación
+                y consumo de APIS mediante tecnologías como NodeJs, Express y React. Y bases de datos SQL (Mysql,
+                sequelize) y NoSQL(MongoDb). Desde las cuales desarrollo soluciones digitales perdurables y escalables.
+                Con experiencia en grupos de investigación de desarrollo de tecnologías y creación de páginas web con el
+                stack MERN, bajo metodologías SCRUM diferenciando el trabajo por el esfuerzo de mejorar y la curiosidad
+                de aprender e implementar tecnologías nueva.
+            </p>
+        </section>
+        <section class="home-desing">
+
+        </section>
     </main>
+    <%- include('partials/footer.ejs') %>
 </body>
 </html>

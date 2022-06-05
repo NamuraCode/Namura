@@ -1,20 +1,46 @@
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
 .nav-main{
     display: flex;
+    height: 15px;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 0px 50px;
+}
+
+.nav-namura a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration:none;
+    text-transform: uppercase
 }
 
 .nav-redirects{
     display: flex;
+    width: 40%;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    padding: 0px;
+}
+
+.nav-redirects a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration:none;
+    text-transform: uppercase
 }
 
 .header-namura{
-    background: rgb(0, 0, 0) ;
+    background: rgba(0, 0, 0, 0) ;
 }
