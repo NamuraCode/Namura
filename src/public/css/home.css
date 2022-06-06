@@ -1,9 +1,46 @@
+@font-face {
+    font-family: fugaz-one-regular;
+    src: url("../fonts/FugazOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: smooch-sans-medium;
+    src: url("../fonts/SmoochSans-Medium.ttf");
+}
+
 body{
     margin: 0px;
     padding: 0px;
     background: rgb(0, 0, 0);
 }
 
+:root{
+    --fugaz-one-regular: "fugaz-one-regular";
+    --smooch-sans-medium: "smooch-sans-medium";
+}
+
+.home-main{
+    width: 50%;
+    margin: auto;
+}
+
+.home-title h1{
+    font-family: var(--fugaz-one-regular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
 .home-description p{
     color: #ffffff;
+    font-family: var(--smooch-sans-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
 }
