@@ -1,0 +1,22 @@
+.footer-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-copyright{
+    display: flex;
+    width: 46%;
+    justify-content: space-evenly;
+}
+
+.footer-text{
+    font-family: var(--fugaz-one-regular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}

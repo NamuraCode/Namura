@@ -12,6 +12,8 @@ body{
     margin: 0px;
     padding: 0px;
     background: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
 }
 
 :root{
@@ -28,7 +30,7 @@ body{
     font-family: var(--fugaz-one-regular);
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 53px;
     display: flex;
     justify-content: center;
@@ -41,6 +43,6 @@ body{
     font-family: var(--smooch-sans-medium);
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 130%;
 }
