@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <%- include('partials/head.ejs') %>
 <body>
     <%- include('partials/header.ejs') %>
-    <div class="background-home">
-        <h1>Home</h1>
-    </div>
-    <main class="home-main">
-        <section class="home-title">
+    <main class='home-main'>
+        <div class='home-title'>
             <h1>Full Stack Developer</h1>
-        </section>
-        <section class="home-dev">
-                <a href="#"><img src="/images/images_dev/nodejs.png"></a>
-                <a href="#"><img src="/images/images_dev/javascript.png"></a>
-                <a href="#"><img src="/images/images_dev/css.png"></a>
-                <a href="#"><img src="/images/images_dev/react.png"></a>
-                <a href="#"><img src="/images/images_dev/github.png"></a>
-                <a href="#"><img src="/images/images_dev/mysql.png"></a>
-        </section>
-        <section class="home-description">
-            <p>
-                Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en
-                lenguajes como, JavaScript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github. Creación
-                y consumo de APIS mediante tecnologías como NodeJs, Express y React. Y bases de datos SQL (Mysql,
-                sequelize) y NoSQL(MongoDb). Desde las cuales desarrollo soluciones digitales perdurables y escalables.
-                Con experiencia en grupos de investigación de desarrollo de tecnologías y creación de páginas web con el
-                stack MERN, bajo metodologías SCRUM diferenciando el trabajo por el esfuerzo de mejorar y la curiosidad
-                de aprender e implementar tecnologías nueva.
-            </p>
-        </section>
-        <section class="home-desing">
-            <a href="#"><img src="/images/images_desing/blender.png"></a>
-            <a href="#"><img src="/images/images_desing/maya.png"></a>
-            <a href="#"><img src="/images/images_desing/zbrush.png"></a>
-            <a href="#"><img src="/images/images_desing/phothoshop.png"></a>
-            <a href="#"><img src="/images/images_desing/krita.png"></a>
-            <a href="#"><img src="/images/images_desing/figma.png"></a>
+        </div>
+        <section class='home-content'>
+            <article class='home-icons home-dev'>
+                    <a href='https://nodejs.org/es/' target='_blank'><img src='/images/images_dev/nodejs.png'></a>
+                    <a href='https://developer.mozilla.org/es/docs/Web/JavaScript' target='_blank'><img src='/images/images_dev/javascript.png'></a>
+                    <a href='https://developer.mozilla.org/es/docs/Web/CSS' target='_blank'><img src='/images/images_dev/css.png'></a>
+                    <a href='https://es.reactjs.org/' target='_blank'><img src='/images/images_dev/react.png'></a>
+                    <a href='https://github.com/' target='_blank'><img src='/images/images_dev/github.png'></a>
+                    <a href='https://www.mysql.com/' target='_blank'><img src='/images/images_dev/mysql.png'></a>
+            </article>
+            <article class='home-description'>
+                <p>
+                    Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en
+                    lenguajes como, JavaScript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github. Creación
+                    y consumo de APIS mediante tecnologías como NodeJs, Express y React. Y bases de datos SQL (Mysql,
+                    sequelize) y NoSQL(MongoDb). Desde las cuales desarrollo soluciones digitales perdurables y escalables.
+                    Con experiencia en grupos de investigación de desarrollo de tecnologías y creación de páginas web con el
+                    stack MERN, bajo metodologías SCRUM diferenciando el trabajo por el esfuerzo de mejorar y la curiosidad
+                    de aprender e implementar tecnologías nueva.
+                </p>
+            </article>
+            <article class='home-icons home-desing'>
+                <a href='https://www.blender.org/' target='_blank'><img src='/images/images_desing/blender.png'></a>
+                <a href='https://autodesk.com/products/maya' target='_blank'><img src='/images/images_desing/maya.png'></a>
+                <a href='https://pixologic.com/' target='_blank'><img src='/images/images_desing/zbrush.png'></a>
+                <a href='https://www.adobe.com/products/photoshop.html' target='_blank'><img src='/images/images_desing/phothoshop.png'></a>
+                <a href='https://krita.org/' target='_blank'><img src='/images/images_desing/krita.png'></a>
+                <a href='https://www.figma.com/' target='_blank'><img src='/images/images_desing/figma.png'></a>
+            </article>
         </section>
     </main>
     <%- include('partials/footer.ejs') %>

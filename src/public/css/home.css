@@ -11,7 +11,8 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: rgb(0, 0, 0);
+    background: linear-gradient(278.34deg, #000000 28.83%, #FFFFFF 253.62%);
+    backdrop-filter: blur(15px);
     width: 100vw;
     height: 100vh;
 }
@@ -22,8 +23,20 @@ body{
 }
 
 .home-main{
-    width: 50%;
+    width: 100vw;
     margin: auto;
+}
+
+.home-icons{
+    display: flex;
+    flex-direction: column;
+    filter: grayscale(1);
+}
+
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-title h1{
@@ -36,6 +49,11 @@ body{
     justify-content: center;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+.home-description{
+    width: 46%;
+    margin: 0px 75px;
 }
 
 .home-description p{
