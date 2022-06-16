@@ -64,3 +64,16 @@ body{
     font-size: 24px;
     line-height: 130%;
 }
+
+.home-location{
+    margin: 10px 0px;
+    font-family: var(--fugaz-one-regular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
