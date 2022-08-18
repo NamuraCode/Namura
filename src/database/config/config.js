@@ -1,23 +1,26 @@
-{
-  "development": {
+module.exports = {
+  development: {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": "12345",
+    "database": "mydb",
     "host": "127.0.0.1",
+    "port":3307,
     "dialect": "mysql"
   },
-  "test": {
+  test: {
     "username": "root",
-    "password": null,
+    "password": "12345",
+    "database": "mydb",
+    "host": "127.0.0.1",
+    "port":3307,
+    "dialect": "mysql"
+  },
+  production: {
+    "username": "root",
+    "password": "12345",
     "database": "database_test",
     "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "port":3307,
     "dialect": "mysql"
   }
 }
