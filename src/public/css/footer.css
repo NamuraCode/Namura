@@ -1,22 +1,30 @@
-.footer-section{
+.main-footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    z-index: 1;
+}
+.footer-copyright{
     display: flex;
     justify-content: space-evenly;
 }
-.footer-copyright{
+.copyright-creator{
     display: flex;
     width: 46%;
     justify-content: space-evenly;
 }
 
-.footer-text{
-    font-family: var(--fugaz-one-regular);
+.creator-text{
+    font-family: 'Fugaz One';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 29px;
+    line-height: 32px;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 2%;
 }

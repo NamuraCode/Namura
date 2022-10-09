@@ -1,79 +1,148 @@
-@font-face {
-    font-family: fugaz-one-regular;
-    src: url("../fonts/FugazOne-Regular.ttf");
-}
-
-@font-face {
-    font-family: smooch-sans-medium;
-    src: url("../fonts/SmoochSans-Medium.ttf");
-}
-
-body{
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     background: linear-gradient(278.34deg, #000000 28.83%, #FFFFFF 253.62%);
-    backdrop-filter: blur(15px);
-    width: 100vw;
-    height: 100vh;
 }
-
-:root{
-    --fugaz-one-regular: "fugaz-one-regular";
-    --smooch-sans-medium: "smooch-sans-medium";
+.main-home{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-
-.home-main{
-    width: 100vw;
-    margin: auto;
+.home-myself{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
-
-.home-icons{
+.myself-description{
+    width: 46%;
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.04 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    outline: 2px solid rgba( 255, 255, 255, 0.18 );
+}
+.description-perfil{
     display: flex;
+    height: 100%;
     flex-direction: column;
-    filter: grayscale(1);
-}
-
-.home-content{
-    display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding: 0 15% 0 15%;
 }
-
-.home-title h1{
-    font-family: var(--fugaz-one-regular);
+.titles-greeting{
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: 'Fugaz One';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 53px;
-    display: flex;
-    justify-content: center;
+    font-size: 22px;
+    line-height: 110%;
     text-transform: uppercase;
-    color: #ffffff;
+    color: rgba(255, 255, 255, .98);
 }
-
-.home-description{
-    width: 46%;
-    margin: 0px 75px;
+.titles-im{
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .98);
 }
-
-.home-description p{
-    color: #ffffff;
-    font-family: var(--smooch-sans-medium);
+.titles-job{
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .98);
+}
+.perfil-text{
+    margin-bottom: 40px;
+}
+.text-cv{
+    font-family: 'Smooch Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 130%;
+    color: rgba(255, 255, 255, 0.9);
 }
-
-.home-location{
-    margin: 10px 0px;
-    font-family: var(--fugaz-one-regular);
+.perfil-more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 74%;
+}
+.perfil-more .more-about, .more-contact{
+    padding: 2px 32px;
+    font-family: 'Fugaz One';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 37px;
-    display: flex;
-    justify-content: center;
+    font-size: 14px;
+    line-height: 32px;
     text-transform: uppercase;
-    color: #ffffff;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .98);
+    transition: all .05s ease-in-out;
+}
+.more-about{
+    background: #215BF0;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(23px);
+    -webkit-backdrop-filter: blur(23px);
+    border-radius: 5px;
+}
+.more-about::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+}
+.more-contact{
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 5px;
+}
+.more-about:hover, .more-contact:hover{
+    border: 2px solid rgb(0 0 0 / 30%);
+}
+.more-about:active, .more-contact:active{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.home-title{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.title-name {
+    max-width: 620px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 181px;
+    text-align: center;
+    letter-spacing: 0.755em;
+    user-select: none;
+    color: rgba(255, 255, 255, 0.05);
 }
