@@ -5,9 +5,28 @@
     z-index: 1;
 }
 .footer-copyright{
+    position: relative;
     display: flex;
     justify-content: space-evenly;
 }
+
+.copyright-social{
+    position: absolute;
+    left: 3%;
+}
+
+.social-footer{
+    padding-right: 5%;
+}
+
+.social-footer img{
+    width: 13%;
+}
+
+.social-footer img:hover{
+    filter: opacity(1) drop-shadow(0 0 0 var(--blueColor))
+}
+
 .copyright-creator{
     display: flex;
     width: 46%;
@@ -26,5 +45,5 @@
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
     margin: 0;
-    padding-bottom: 2%;
+    padding-bottom: 1.4%;
 }
