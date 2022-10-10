@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap');
+
+:root {
+    --blueColor: #215BF0
+}
+
 body {
     position: relative;
     width: 100vw;
@@ -8,25 +14,99 @@ body {
     padding: 0px;
     background: linear-gradient(278.34deg, #000000 28.83%, #FFFFFF 253.62%);
 }
-.main-home{
+
+.main-home {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.home-myself{
+
+.home-myself {
     position: absolute;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
 }
-.myself-description{
+
+.myself-description {
     width: 46%;
     height: 100%;
-    background: rgba( 255, 255, 255, 0.04 );
-    backdrop-filter: blur( 6px );
-    -webkit-backdrop-filter: blur( 6px );
-    outline: 2px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    outline: 2px solid rgba(255, 255, 255, 0.18);
 }
-.description-perfil{
+
+.myself-animation {
+    display: flex;
+    width: 54%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.animation-titles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.animation-icons {
+    position: relative;
+    width: 100%;
+    height: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-code,
+.icons-desing {
+    position: absolute;
+    opacity: 0;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    transition: all .2s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    pointer-events: none;
+}
+
+.show-icons{
+    opacity: 1 !important;
+    pointer-events: all !important;
+}
+
+.selected{
+    font-weight: 700 !important;
+    color: var(--blueColor) !important;
+}
+
+.animation-titles .titles-code,
+.titles-desing,
+.titles-separator {
+    font-family: 'Smooch Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.animation-titles .titles-code,
+.titles-desing {
+    cursor: pointer;
+}
+
+.description-perfil {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -34,7 +114,8 @@ body {
     justify-content: center;
     padding: 0 15% 0 15%;
 }
-.titles-greeting{
+
+.titles-greeting {
     margin: 0;
     margin-bottom: 8px;
     font-family: 'Fugaz One';
@@ -45,7 +126,8 @@ body {
     text-transform: uppercase;
     color: rgba(255, 255, 255, .98);
 }
-.titles-im{
+
+.titles-im {
     margin: 0;
     margin-bottom: 8px;
     font-family: 'Fugaz One';
@@ -56,7 +138,8 @@ body {
     text-transform: uppercase;
     color: rgba(255, 255, 255, .98);
 }
-.titles-job{
+
+.titles-job {
     margin: 0;
     margin-bottom: 30px;
     font-family: 'Fugaz One';
@@ -67,10 +150,12 @@ body {
     text-transform: uppercase;
     color: rgba(255, 255, 255, .98);
 }
-.perfil-text{
+
+.perfil-text {
     margin-bottom: 40px;
 }
-.text-cv{
+
+.text-cv {
     font-family: 'Smooch Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -78,14 +163,58 @@ body {
     line-height: 130%;
     color: rgba(255, 255, 255, 0.9);
 }
-.perfil-more{
+
+.perfil-more {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 74%;
+    width: 310px;
 }
-.perfil-more .more-about, .more-contact{
-    padding: 2px 32px;
+
+.more-btn {
+    position: relative;
+}
+
+.more-btn:hover::after {
+    content: "";
+    position: absolute;
+    left: 11.5%;
+    top: 18px;
+    width: 80%;
+    height: 80%;
+    filter: blur(6px);
+    border-radius: 5%;
+    background: var(--blueColor);
+    z-index: -2;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.more-btn:hover::before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    top: 14px;
+    width: 64%;
+    height: 50%;
+    filter: blur(4px);
+    background: #ffffff;
+    z-index: -1;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .1s;
+    animation-duration: .1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.more-btn .btn-about,
+.btn-contact {
+    padding: 4px 32px;
     font-family: 'Fugaz One';
     font-style: normal;
     font-weight: 400;
@@ -96,34 +225,34 @@ body {
     color: rgba(255, 255, 255, .98);
     transition: all .05s ease-in-out;
 }
-.more-about{
-    background: #215BF0;
+
+.btn-about {
+    background: var(--blueColor);
     border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(23px);
     -webkit-backdrop-filter: blur(23px);
     border-radius: 5px;
 }
-.more-about::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF;
-}
-.more-contact{
-    background: rgba(255, 255, 255, 0.15);
+
+.btn-contact {
+    background: rgb(82 82 82);
     border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur(7.5px);
     border-radius: 5px;
 }
-.more-about:hover, .more-contact:hover{
+
+.btn-about:hover,
+.btn-contact:hover {
     border: 2px solid rgb(0 0 0 / 30%);
 }
-.more-about:active, .more-contact:active{
+
+.btn-about:active,
+.btn-contact:active {
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
-.home-title{
+
+.home-title {
     position: absolute;
     display: flex;
     width: 100%;
@@ -132,6 +261,7 @@ body {
     align-items: center;
     z-index: -1;
 }
+
 .title-name {
     max-width: 620px;
     margin: 0;
@@ -145,4 +275,34 @@ body {
     letter-spacing: 0.755em;
     user-select: none;
     color: rgba(255, 255, 255, 0.05);
+}
+
+/* Animations */
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
