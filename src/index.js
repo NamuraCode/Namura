@@ -16,4 +16,6 @@ app.set('view engine', 'ejs');
 app.use(express.json())
 // For recibe date in req.body 
 app.use(express.urlencoded({extended: true}));
-app.listen(3000)
+app.listen(3000,()=>{ 
+    console.log("runnig in port 3000")
+})

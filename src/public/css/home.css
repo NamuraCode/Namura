@@ -35,7 +35,7 @@ body {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    outline: 2px solid rgba(255, 255, 255, 0.18);
+    outline: 1px solid rgba(255, 255, 255, 0.18);
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
     -webkit-animation-duration: 1s;
@@ -85,12 +85,12 @@ body {
     pointer-events: none;
 }
 
-.show-icons{
+.show-icons {
     opacity: 1 !important;
     pointer-events: all !important;
 }
 
-.selected{
+.selected {
     font-weight: 700 !important;
     color: var(--blueColor) !important;
 }
@@ -234,7 +234,7 @@ body {
 
 .btn-about {
     background: var(--blueColor);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(23px);
     -webkit-backdrop-filter: blur(23px);
     border-radius: 5px;
@@ -242,7 +242,7 @@ body {
 
 .btn-contact {
     background: rgb(82 82 82);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur(7.5px);
     border-radius: 5px;
@@ -250,12 +250,12 @@ body {
 
 .btn-about:hover,
 .btn-contact:hover {
-    border: 2px solid rgb(0 0 0 / 30%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .btn-about:active,
 .btn-contact:active {
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .home-title {
@@ -281,6 +281,10 @@ body {
     letter-spacing: 0.755em;
     user-select: none;
     color: rgba(255, 255, 255, 0.05);
+}
+
+.about-home {
+    height: auto !important;
 }
 
 /* Animations */
