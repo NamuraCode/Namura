@@ -8,6 +8,15 @@ const contactController = {
         } catch (error) {
             console.log(`Error in the page:" ${error} "`)
         }
+    },
+    message: (req, res)=>{
+        try {
+            let bodyContact = req.body
+            console.log(bodyContact)
+            res.redirect("/contact")
+        } catch (error) {
+            console.log(`Error in the page:" ${error} "`)
+        }
     }
 }
 

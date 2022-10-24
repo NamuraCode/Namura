@@ -3,8 +3,16 @@
     <%- include('partials/head.ejs') %>
 <body>
     <%- include('partials/header.ejs') %>
-    <main>
-        
+    <main class="main-contact">
+        <section class="contact-form">
+            <form action="./contact/message" method="post" class="form-main" >
+                <label for="name">Name</label>
+                <input name="name">
+                <label>Lastname</label>
+                <input name="lastname">
+                <button type="submit">submit</button>
+            </form>
+        </section>
     </main>
     <%- include('partials/footer.ejs') %>
 </body>
