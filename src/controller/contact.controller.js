@@ -1,3 +1,5 @@
+const User = require('../models/user')
+
 const contactController = {
     contact: (req, res)=>{
         try {
@@ -11,8 +13,11 @@ const contactController = {
     },
     message: (req, res)=>{
         try {
-            let bodyContact = req.body
-            console.log(bodyContact)
+            let user = new User(
+                req.body.name,
+                req.body.name
+            )
+            console.log(user)
             res.redirect("/contact")
         } catch (error) {
             console.log(`Error in the page:" ${error} "`)
