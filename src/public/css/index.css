@@ -3,5 +3,21 @@
 @import url('./haeder.css');
 @import url('./home.css');
 @import url('./contact.css');
-@import url('./pages.css')
+@import url('./pages.css');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap');
+
+:root {
+    --blueColor: #215BF0
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(278.34deg, #000000 28.83%, #FFFFFF 253.62%);
+}
