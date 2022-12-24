@@ -8,7 +8,6 @@
 
 body {
     position: relative;
-    width: 100vw;
     height: 100vh;
     margin: 0px;
     padding: 0px;
@@ -281,10 +280,6 @@ body {
     letter-spacing: 0.755em;
     user-select: none;
     color: rgba(255, 255, 255, 0.05);
-}
-
-.about-home {
-    height: auto !important;
 }
 
 /* Animations */

@@ -1,3 +1,7 @@
+const User = require('../models/user')
+const fs = require("fs")
+const db = require('../json/users.json')
+const path = require("path")
 const contactController = {
     contact: (req, res)=>{
         try {
@@ -11,8 +15,15 @@ const contactController = {
     },
     message: (req, res)=>{
         try {
-            let bodyContact = req.body
-            console.log(bodyContact)
+            let user = new User(
+                req.body.name,
+                req.body.lastname,
+                req.body.message
+            )
+            db.push(user)
+            let users = JSON.stringify(db, null, 4) 
+            fs.writeFileSync(path.resolve(__dirname,'../json/users.json'), users)
+            console.log(user)
             res.redirect("/contact")
         } catch (error) {
             console.log(`Error in the page:" ${error} "`)

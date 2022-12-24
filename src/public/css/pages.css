@@ -1,0 +1,61 @@
+.main-pages{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pages-cart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+
+.cart-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.info-left{
+    background-color: transparent;
+    border-color: transparent;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.info-right{
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.about-title{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.title-pages{
+    max-width: 744px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 181px;
+    text-align: center;
+    letter-spacing: 0.755em;
+    user-select: none;
+    color: rgba(255, 255, 255, 0.05);
+}
