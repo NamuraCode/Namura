@@ -6,7 +6,7 @@ const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 // const config = require(__dirname + '/../config/config.js')[env];
 const config = {
-  "username": "root",
+  "username": "david",
   "password": "12345",
   "database": "mydb",
   "host": "127.0.0.1",

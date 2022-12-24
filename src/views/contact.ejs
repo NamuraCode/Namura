@@ -5,13 +5,20 @@
     <%- include('partials/header.ejs') %>
     <main class="main-contact">
         <section class="contact-form">
-            <form action="./contact/message" method="post" class="form-main" >
-                <label for="name">Name</label>
-                <input name="name">
-                <label>Lastname</label>
-                <input name="lastname">
-                <button type="submit">submit</button>
-            </form>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7931.248096025754!2d-75.57871947272976!3d6.313018478436161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442ee02a43e961%3A0x66b4faf52991711b!2sMaruchenga%2C%20Bello%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1668643325830!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            <article>
+                <form action="./contact/message" method="post" class="form-main" >
+                    <label for="name">Name</label>
+                    <input name="name" type="text">
+                    <label>Email</label>
+                    <input name="lastname" type="email">
+                    <label>message</label>
+                    <textarea name="message"></textarea>
+                    <button type="submit">submit</button>
+                </form>
+            </article>
         </section>
     </main>
     <%- include('partials/footer.ejs') %>
