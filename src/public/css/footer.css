@@ -48,7 +48,7 @@
 }
 
 .creator-text {
-    font-family: 'Fugaz One';
+    font-family: var(--fontFugaz);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

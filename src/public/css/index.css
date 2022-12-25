@@ -11,7 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap');
 
 :root {
-    --blueColor: #215BF0
+    --blueColor: #215BF0;
+    --fontFugaz: 'Fugaz One'
 }
 
 body {

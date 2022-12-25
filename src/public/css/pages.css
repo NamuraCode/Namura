@@ -9,6 +9,7 @@
 .pages-cart{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: 80%;
     width: 100%;
@@ -16,9 +17,58 @@
 
 .cart-info{
     display: flex;
+    width: fit-content;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.info-change{
+    position: absolute;
+    bottom: 0;
+    bottom: -30%;
+    display: flex;
+    width: 120%;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
+}
+
+.info-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-page h2, h3{
+    margin: 0;
+}
+
+.info-page h2 {
+    font-family: var(--fontFugaz);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.info-page h3 {
+    font-family: 'Smooch Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
 }
 
 .info-left{
@@ -32,6 +82,50 @@
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
+}
+
+.info-left img, .info-right img{
+    width: 60%;
+}
+
+.info-image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-redirect{
+    width: 84%;
+    height: 400px;
+    opacity: 0.4;
+}
+
+.redirect-image{
+    width: 100%;
+    height: 100%;
+}
+
+.image-description{
+    position: absolute;
+    top: -15%;
+    left: -82%;
+    width: 120%;
+    font-family: 'Smooch Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .about-title{
@@ -49,7 +143,7 @@
     max-width: 744px;
     margin: 0;
     text-transform: uppercase;
-    font-family: 'Fugaz One';
+    font-family: var(--fontFugaz);
     font-style: normal;
     font-weight: 400;
     font-size: 120px;

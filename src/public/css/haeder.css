@@ -17,7 +17,7 @@
     align-items: center;
 }
 .nav-name a{
-    font-family: 'Fugaz One';
+    font-family: var(--fontFugaz);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -37,7 +37,7 @@
     margin: 0;
 }
 .nav-redirects li a{
-    font-family: 'Fugaz One';
+    font-family: var(--fontFugaz);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
