@@ -96,12 +96,20 @@
     flex-direction: column;
 }
 
-.image-content{
+.image-carts{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.cart-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
 }
 
 .image-redirect{
@@ -118,8 +126,8 @@
 .image-description{
     position: absolute;
     top: -15%;
-    left: -82%;
-    width: 120%;
+    left: -20%;
+    width: 94%;
     font-family: 'Smooch Sans';
     font-style: normal;
     font-weight: 500;
