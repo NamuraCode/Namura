@@ -12,7 +12,9 @@
 
 :root {
     --blueColor: #215BF0;
-    --fontFugaz: 'Fugaz One'
+    --fontFugaz: 'Fugaz One';
+    --colorWhite: #FFFFFF;
+    --colorBlack: #000000;
 }
 
 body {

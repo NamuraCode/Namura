@@ -20,7 +20,7 @@
     font-family: var(--fontFugaz);
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 29px;
     text-align: center;
     text-decoration:none;
@@ -29,17 +29,42 @@
 }
 .nav-redirects{
     display: flex;
-    width: 38%;
+    flex-grow: 0.3;
     flex-direction: row;
     justify-content: space-between;
-    list-style: none;
     padding: 0px;
     margin: 0;
 }
+
+.redirects-lists{
+    list-style: none;
+}
+
+.redirects-pagues{
+    display: flex;
+    flex-grow: 0.6;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redirect-contact{
+    display: flex;
+    padding: 4px 18px 4px 18px;
+    justify-content: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+}
+
+.redirect-contact li a{
+    color: var(--colorBlack) !important;
+}
+
 .nav-redirects li a{
     font-family: var(--fontFugaz);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 14px;
     line-height: 29px;
     color: rgba(255, 255, 255, .98);
