@@ -16,7 +16,9 @@
     display: flex;
     align-items: center;
 }
+
 .nav-name a{
+    transition: transform .2s ease-in-out;
     font-family: var(--fontFugaz);
     font-style: normal;
     font-weight: 400;
@@ -27,6 +29,11 @@
     text-transform: uppercase;
     color: rgba(255, 255, 255, .9);
 }
+
+.nav-name:hover a{
+    transform: scale(1.4);
+}
+
 .nav-redirects{
     display: flex;
     flex-grow: 0.3;
