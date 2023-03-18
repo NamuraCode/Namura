@@ -9,11 +9,11 @@
 
 .home-hover{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     position: absolute;
     top: 0%;
-    left: 0%;
+    left: -18px;
     width: 7.2%;
     height: 100%;
     background-color: black;
@@ -23,9 +23,8 @@
 .home-hover-vertical{
     position: absolute;
     top: 0%;
-    left: -12%;
     display: block;
-    width: 26%;
+    width: 32px;
     height: 100%;
     background-color: var(--radialHover);
     filter: blur(20px) 
@@ -39,7 +38,7 @@
     width: 26%;
     height: 3.2%;
     border-radius: 50%;
-    transition: width .3s ease-out;
+    transition: width .1s ease-out;
     background: var(--radialHoverBall);
     filter: blur(18px)
 }
@@ -67,7 +66,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform .2s ease-in-out;
+    transition: transform .1s ease-in-out;
     opacity: 1;
     z-index: 1;
 }
@@ -76,8 +75,31 @@
     transform: scale(1.4);
 }
 
+.social-links:hover::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--radialHoverBall);
+    filter: contrast(8) blur(6px);
+    z-index: 0;
+}
+
+.social-links:hover::after{
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--blueColor);
+    filter: blur(6px);
+    z-index: -1;
+}
+
 .social-links img {
     width: 70%;
+    z-index: 1;
 }
 
 .myself-description {

@@ -32,11 +32,11 @@ window.addEventListener("load", ()=>{
             for (let i = 0; i < linksArray.length; i++) {
                 linksArray[i].addEventListener("mouseover", ()=>{
                     console.log("| --entro")
-                    console.log(device.style.width = "42%");
+                    console.log(device.style.width = "60%");
                 })
                 linksArray[i].addEventListener("mouseout", ()=>{
                     console.log("- --salio")
-                    console.log(device.style.width = "26%");
+                    console.log(device.style.width = "28%");
                 })
             }
         }
