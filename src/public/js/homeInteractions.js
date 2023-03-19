@@ -1,47 +1,51 @@
 window.addEventListener("load", ()=>{
     let locationPage = window.location.pathname
-    if(locationPage === "/"){
-        //Links reference hover
-        const homeMe = document.querySelector(".nav-name")
-        const github = document.querySelector(".social-github")
-        const arstation = document.querySelector(".social-artstation")
-        const instagram = document.querySelector(".social-instagram")
-        const email = document.querySelector(".social-email")
-        const whatsapp = document.querySelector(".social-whatsapp")
-        const device = document.querySelector(".hove-vertical-ball")
-        const linksArray = [homeMe,github,arstation,instagram,email,whatsapp]
-
-        let titleCode = document.querySelector(".titles-code")
-        let iconCode = document.querySelector(".icons-code")
-        let titleDesing = document.querySelector(".titles-desing")
-        let iconDesing = document.querySelector(".icons-desing")
-        // is necesary that array start whit the title
-        let codeModel = [titleCode, iconCode]
-        let desingModel = [titleDesing, iconDesing]
-
-        titleCode.addEventListener("click", ()=>{
-            hiddenShowModelsHome(codeModel, desingModel, "selected", "show-icons")
-        })
-        titleDesing.addEventListener("click", ()=>{
-            hiddenShowModelsHome(desingModel, codeModel, "selected", "show-icons")
-        })
-
-        stopTrakingLinks(linksArray, device)
-
-        function stopTrakingLinks(linksArray, device){
-            for (let i = 0; i < linksArray.length; i++) {
-                linksArray[i].addEventListener("mouseover", ()=>{
-                    console.log("| --entro")
-                    console.log(device.style.width = "60%");
-                })
-                linksArray[i].addEventListener("mouseout", ()=>{
-                    console.log("- --salio")
-                    console.log(device.style.width = "28%");
-                })
+    try{
+        if(locationPage === "/"){
+            //Links reference hover
+            const homeMe = document.querySelector(".nav-name")
+            const github = document.querySelector(".social-github")
+            const arstation = document.querySelector(".social-artstation")
+            const instagram = document.querySelector(".social-instagram")
+            const email = document.querySelector(".social-email")
+            const whatsapp = document.querySelector(".social-whatsapp")
+            const device = document.querySelector(".hove-vertical-ball")
+            const linksArray = [homeMe,github,arstation,instagram,email,whatsapp]
+    
+            let titleCode = document.querySelector(".titles-code")
+            let iconCode = document.querySelector(".icons-code")
+            let titleDesing = document.querySelector(".titles-desing")
+            let iconDesing = document.querySelector(".icons-desing")
+            // is necesary that array start whit the title
+            let codeModel = [titleCode, iconCode]
+            let desingModel = [titleDesing, iconDesing]
+    
+            titleCode.addEventListener("click", ()=>{
+                hiddenShowModelsHome(codeModel, desingModel, "selected", "show-icons")
+            })
+            titleDesing.addEventListener("click", ()=>{
+                hiddenShowModelsHome(desingModel, codeModel, "selected", "show-icons")
+            })
+    
+            stopTrakingLinks(linksArray, device)
+    
+            function stopTrakingLinks(linksArray, device){
+                for (let i = 0; i < linksArray.length; i++) {
+                    linksArray[i].addEventListener("mouseover", ()=>{
+                        console.log("| --entro")
+                        console.log(device.style.width = "60%");
+                    })
+                    linksArray[i].addEventListener("mouseout", ()=>{
+                        console.log("- --salio")
+                        console.log(device.style.width = "28%");
+                    })
+                }
             }
-        }
-    }   
-    linksTrakerMouse()
+            linksTrakerMouse()
+        }   
+    }catch(error){
+        console.log(error);
+    }
 })
 
 
