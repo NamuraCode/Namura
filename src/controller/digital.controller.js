@@ -12,4 +12,4 @@ const desingController = {
     }
 }
 
-module.exports = desingController
+export default desingController

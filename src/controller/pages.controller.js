@@ -11,4 +11,4 @@ const pagesController = {
     }
 }
 
-module.exports = pagesController
+export default pagesController

@@ -1,5 +1,4 @@
-// const path = require("path")
-const db2 = require('../models/test') 
+// import path from "path"
 const homeController = {
     home: async (req, res)=>{
         try {
@@ -14,4 +13,4 @@ const homeController = {
     }
 }
 
-module.exports = homeController
+export default homeController

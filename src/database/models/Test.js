@@ -1,4 +1,4 @@
-module.exports = (sequelize, dataTypes) => {
+export default (sequelize, dataTypes) => {
     const alias = "Punto"
     const colums = {
         id: {

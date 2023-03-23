@@ -1,7 +1,7 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const { pagesController } = require('../controller')
+import contoller from '../controller/index.js'
 
-router.get("/pages", pagesController.pages)
+router.get("/pages", contoller.pagesController.pages)
 
-module.exports = router
+export default router

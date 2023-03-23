@@ -1,12 +1,14 @@
-const express = require("express");
+import express from "express";
 const app = express();
-const path =  require("path");
-const bodyParser = require('body-parser')
-const morgan = require('morgan');
+import { resolve, join, dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+import bodyParser from 'body-parser'
+import morgan from 'morgan';
 // routes
-const index_routes = require("./routers/index.routes");
+import index_routes from "./routers/index.routes.js";
 // Path absoilute
-const publicPath = path.resolve(__dirname,'./public');
+const publicPath = resolve(__dirname,'./public');
 // Estatic route for date in proyect
 app.use(express.static(publicPath));
 // For recibe date in req.body 
@@ -18,4 +20,4 @@ app.use(morgan('combined'))
 // Route for / empty
 app.use('/', index_routes);
 // export app 
-module.exports = app;
+export default app;

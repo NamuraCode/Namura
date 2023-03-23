@@ -1,11 +1,11 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const home = require("./home.routes")
-const desing = require("./digital.routes")
-const models = require("./models.routes")
-const pages = require("./pages.routes")
-const about = require("./about.routes")
-const contact = require("./contact.routes")
+import home from "./home.routes.js"
+import desing from "./digital.routes.js"
+import models from "./models.routes.js"
+import pages from "./pages.routes.js"
+import about from "./about.routes.js"
+import contact from "./contact.routes.js"
 
 router.use('/', home)
 
@@ -19,4 +19,4 @@ router.use('/', about)
 
 router.use('/', contact)
 
-module.exports = router
+export default router

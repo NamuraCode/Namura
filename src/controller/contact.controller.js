@@ -1,7 +1,7 @@
-const User = require('../models/user')
-const fs = require("fs")
-const db = require('../json/users.json')
-const path = require("path")
+import User from '../models/user.js'
+import fs from "fs"
+//const db = JSON.parse(fs.readFileSync('../json/users.json'));
+import path from "path"
 const contactController = {
     contact: (req, res)=>{
         try {
@@ -31,4 +31,4 @@ const contactController = {
     }
 }
 
-module.exports = contactController
+export default contactController
