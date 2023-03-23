@@ -1,15 +1,17 @@
-const homeController = require('./home.controller')
-const desingController = require('./digital.controller')
-const modelsController = require('./models.controller')
-const pagesController = require('./pages.controller')
-const aboutController = require('./about.controller')
-const contactController = require('./contact.controller')
+import homeController from './home.controller.js'
+import desingController from './digital.controller.js'
+import modelsController from './models.controller.js'
+import pagesController from './pages.controller.js'
+import aboutController from './about.controller.js'
+import contactController from './contact.controller.js'
 
-module.exports = { 
-    homeController, 
+const controllers = {
+    homeController,
     desingController, 
     modelsController, 
     pagesController, 
     aboutController,
     contactController
 }
+
+export default controllers

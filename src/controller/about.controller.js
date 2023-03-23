@@ -8,4 +8,4 @@ const aboutController ={
     }
 }
 
-module.exports = aboutController
+export default aboutController

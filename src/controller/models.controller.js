@@ -8,4 +8,4 @@ const modelsController = {
     }
 }
 
-module.exports = modelsController
+export default modelsController

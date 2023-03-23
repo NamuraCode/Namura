@@ -1,7 +1,7 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const { desingController } = require('../controller')
+import contoller from '../controller/index.js'
 
-router.get('/digital', desingController.digital);
+router.get('/digital', contoller.desingController.digital);
 
-module.exports = router
+export default router
