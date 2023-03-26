@@ -2,39 +2,40 @@ window.addEventListener("load", ()=>{
     let locationPage = window.location.pathname
     try{
         if(locationPage === "/pages"){
-            const pagesItems = document.querySelectorAll(".info-content-pages")
+            const pageItems = document.querySelectorAll(".info-content-pages")
             const decrementArrow = document.querySelector(".change-left")
             const increaseArrow = document.querySelector(".change-right")
-            let showCart = Math.trunc(pagesItems.length / 2)
-            const widthCart = pagesItems[showCart].clientWidth
-            console.log(widthCart);
+            let showCart = Math.trunc(pageItems.length / 2)
+            const minPositionCarts =  -120
+            const cartPositions = [
+                `translate(${minPositionCarts / 1}%, 0px) scale(0.4)`,
+                `translate(${minPositionCarts / 1.7}%, 0px) scale(0.6)`,
+                `translate(${minPositionCarts - minPositionCarts}%, 0px) scale(1)`,
+                `translate(${(minPositionCarts / 1.7) * -1}%, 0px) scale(0.6)`,
+                `translate(${(minPositionCarts / 1) * -1}%, 0px) scale(0.4)`
+            ]
+
+            for (let index = 0; index < pageItems.length; index++) {
+                pageItems[index].style.transform = cartPositions[index]
+            }
 
             function changeCartIndex(operation){
                 operation != "decrement" ? showCart += 1 : showCart -= 1 
-                if (showCart > pagesItems.length) {
+                if (showCart > pageItems.length) {
                     showCart = 1
                 }else{
                     if (showCart < 1) {
-                        showCart = pagesItems.length
+                        showCart = pageItems.length
                     }
                 }
                 return showCart
             }
 
-            function changeCart(array){
-                let totalArray = array.length
-                if (totalArray > 0) {
-                    array.forEach((element, index)=> {
-                        index > totalArray / 2 ? console.log(element) : console.log(element)
-                    });
-                }
-            }
             decrementArrow.addEventListener("click", ()=>{
-                changeCart(pagesItems)
                 console.log(changeCartIndex('decrement'))
             })
+
             increaseArrow.addEventListener("click", ()=>{
-                changeCart(pagesItems)
                 console.log(changeCartIndex('increment'))
             })
 

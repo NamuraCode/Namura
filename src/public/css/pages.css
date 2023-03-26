@@ -18,6 +18,7 @@
 }
 
 .cart-info-pages{
+    position: relative;
     display: flex;
     width: max-content;
     justify-content: center;
@@ -90,8 +91,9 @@
 }
 
 .info-content-pages{
-    position: relative;
+    position: absolute;
     display: flex;
+    width: inherit;
     align-items: center;
     justify-content: center;
     flex-direction: column; 
