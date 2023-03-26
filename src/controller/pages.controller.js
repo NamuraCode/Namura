@@ -2,7 +2,7 @@ const pagesController = {
     pages: (req, res)=>{
         try{
             let pages = {
-                total: 8
+                total: 18
             }
             res.render("pages", {pages})
         }catch(error){

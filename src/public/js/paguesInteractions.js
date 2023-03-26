@@ -5,20 +5,41 @@ window.addEventListener("load", ()=>{
             const pagesItems = document.querySelectorAll(".info-content-pages")
             const decrementArrow = document.querySelector(".change-left")
             const increaseArrow = document.querySelector(".change-right")
-            const totalItems = pagesItems.length
-            const halfScreen =  window.innerWidth / 2
-            const splitScreen = halfScreen/totalItems
-            let cartPositionDevice = halfScreen
-            // console.log(cartPositionDevice);
-            // console.log(Math.trunc((totalItems / 2)));
-            pagesItems.forEach((cart, index) => {
-                cartPositionDevice -= splitScreen
-                console.log(1 / (index / 10));
-                // console.log(cartPositionDevice)
-                const indexCurrent = index + 1
-                indexCurrent == Math.trunc((totalItems / 2)) ? cart.setAttribute("active", true) : ""
-            });
-            
+            let showCart = Math.trunc(pagesItems.length / 2)
+            const widthCart = pagesItems[showCart].clientWidth
+            console.log(widthCart);
+
+            function changeCartIndex(operation){
+                operation != "decrement" ? showCart += 1 : showCart -= 1 
+                if (showCart > pagesItems.length) {
+                    showCart = 1
+                }else{
+                    if (showCart < 1) {
+                        showCart = pagesItems.length
+                    }
+                }
+                return showCart
+            }
+
+            function changeCart(array){
+                let totalArray = array.length
+                if (totalArray > 0) {
+                    array.forEach((element, index)=> {
+                        index > totalArray / 2 ? console.log(element) : console.log(element)
+                    });
+                }
+            }
+            decrementArrow.addEventListener("click", ()=>{
+                changeCart(pagesItems)
+                console.log(changeCartIndex('decrement'))
+            })
+            increaseArrow.addEventListener("click", ()=>{
+                changeCart(pagesItems)
+                console.log(changeCartIndex('increment'))
+            })
+
+
+          
         }
     }catch(error){
         console.log(error);
