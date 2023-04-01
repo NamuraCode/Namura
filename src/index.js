@@ -1,7 +1,7 @@
+import * as dotenv from 'dotenv'
 import app from "./app.js";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import * as dotenv from 'dotenv'
 dotenv.config()
 const __dirname = dirname(fileURLToPath(import.meta.url));
 // Absolute path views for partials
