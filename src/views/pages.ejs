@@ -5,43 +5,34 @@
     <%- include('partials/header.ejs') %>
     <main class="main-pages">
       <%- include('partials/socialLinks.ejs') %>
-      <section class="pages-cart">
-        <article class="cart-info-pages">
-          <div class="info-content-pages">
-            <p class="content-description-pages">
-              Desarrollador Full-Stack JavaScript, cursado en Digital House y
-              Misión Tic 2021. JavaScript, Python, Java, HTML y CSS. Gestión de
-              repositorios con Git y Github.
-            </p>
-            <a
-              class="image-redirect"
-              href="https://www.makata.tv/"
-              target="_blank"
-            >
-              <img
-                class="redirect-image"
-                src="/images/general/placeholderImage.png"
-                alt="image-cart"
-              />
-            </a>
+      <section class="pages-cart swiper">
+        <article class="cart-info-pages swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="image-pages" src="/images/general/placeholderImage.png" alt="page" />
+          </div>
+          <div class="swiper-slide">
+            <img class="image-pages" src="/images/general/placeholderImage.png" alt="page" />
+          </div>
+          <div class="swiper-slide">
+            <img class="image-pages" src="/images/general/placeholderImage.png" alt="page" />
           </div>
         </article>
-        <article class="cart-change-pages">
-          <button class="change-left">
-            <img
-              class="change-image"
-              src="/images/general/arrow.svg"
-              alt="arrow-left"
-            />
-          </button>
-          <div class="change-page">
-            <h2 class="page-title">Makata</h2>
-            <h3 class="page-about">preview</h3>
-          </div>
-          <button class="change-right">
-            <img src="/images/general/arrow.svg" alt="arrow-right" />
-          </button>
-        </article>
+      </section>
+      <section class="cart-change-pages ">
+        <button class="change-left swiper-button-prev">
+          <img
+            class="change-image"
+            src="/images/general/arrow.svg"
+            alt="arrow-left"
+          />
+        </button>
+        <div class="change-page">
+          <h2 class="page-title">Makata</h2>
+          <h3 class="page-about">preview</h3>
+        </div>
+        <button class="change-right swiper-button-next">
+          <img src="/images/general/arrow.svg" alt="arrow-right" />
+        </button>
       </section>
       <section class="about-title">
         <h1 class="title-pages">pages</h1>
