@@ -3,7 +3,7 @@ const aboutController ={
         try{
             res.render("about")
         }catch(error){
-            console.log(`Error in the page:" ${error} "`)
+            console.log(`Error in the page: "${error}"`)
         }
     }
 }

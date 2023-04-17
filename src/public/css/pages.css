@@ -24,7 +24,17 @@
   scroll-snap-type: x mandatory;
 }
 
+.info-pages-cart{
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 60% !important;
+}
+
 .cart-change-pages {
+  position: absolute;
+  bottom: 2%;
+  left: 38.2%;
   display: flex;
   width: 22%;
   justify-content: space-between;
