@@ -7,42 +7,6 @@
     height: 100%;
 }
 
-.home-hover{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    position: absolute;
-    top: 0%;
-    left: -18px;
-    width: 7.2%;
-    height: 100%;
-    background-color: black;
-    filter: contrast(8) blur(2px);
-}
-
-.home-hover-vertical{
-    position: absolute;
-    top: 0%;
-    display: block;
-    width: 32px;
-    height: 100%;
-    background-color: var(--radialHover);
-    filter: blur(20px) 
-}
-
-.hove-vertical-ball{
-    content: "";
-    position: absolute;
-    top: 1.2%;
-    left: 0%;
-    width: 26%;
-    height: 3.2%;
-    border-radius: 50%;
-    transition: width .1s ease-out;
-    background: var(--radialHoverBall);
-    filter: blur(18px)
-}
-
 .home-myself {
     position: absolute;
     display: flex;
@@ -71,32 +35,6 @@
     z-index: 1;
 }
 
-.social-links:hover{
-    transform: scale(1.4);
-}
-
-.social-links:hover::before{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--radialHoverBall);
-    filter: contrast(8) blur(6px);
-    z-index: 0;
-}
-
-.social-links:hover::after{
-    content: "";
-    position: absolute;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--blueColor);
-    filter: blur(6px);
-    z-index: -1;
-}
-
 .social-links img {
     width: 70%;
     z-index: 1;
@@ -109,10 +47,6 @@
     justify-content: center;
     align-items: center;
     width: 38%;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    outline: 1px solid rgba(255, 255, 255, 0.18);
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
     -webkit-animation-duration: 1s;
